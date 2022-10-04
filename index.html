@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
 </head>
+
 <body>
-   <h1>Alura Typer</h1>
-   <p class="frase">Essa frase tem varias belas palavras</p>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Essa frase tem varias belas palavras</p>
 
-     <ul class="informacoes">
-        <li><span id="tamanho-frase">30</span> palavras</li>
-        <li><span id="tempo-digitacao">3</span>  segundos</li>
-     </ul>
-     <textarea class="campo-digitacao" cols="40" rows="8"></textarea>
-     <button id="botao-reiniciar" >Reiniciar jogo</button>
+        <ul class="informacoes center">
+            <li>
+                <i class="icones small material-icons">description</i>
+                <span id="tamanho-frase">30</span> palavras
+            </li>
+            <li>
+                <i class="icones small material-icons">query_builder</i>
+                <span id="tempo-digitacao">10</span> segundos
+            </li>
+        </ul>
+        <textarea class="campo-digitacao" cols="40" rows="8"></textarea>
+        <div class="botoes">
+            <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red"><i
+                    class="material-icons">restore</i></a>
+        </div>
 
-     <ul>
-         <li><span id="contador-caracteres">0</span> caracteres</li>
-         <li> <span id="contador-palavras">0</span> palavras</li>
-    </ul>
-
-     <script src="js/jquery.js"></script>
-     <script src="js/main.js"></script>
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li> <span id="contador-palavras">0</span> palavras</li>
+        </ul>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
